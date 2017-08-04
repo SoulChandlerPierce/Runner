@@ -1,0 +1,51 @@
+[gd_resource type="TileSet" load_steps=7 format=1]
+
+[ext_resource path="res://sprites/dirt.png" type="Texture" id=1]
+[ext_resource path="res://sprites/grass.png" type="Texture" id=2]
+[ext_resource path="res://sprites/crate.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 32.6334, 32 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 32, 32 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 32, 32 )
+
+[resource]
+
+0/name = "Dirt"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 50, 50 )
+0/occluder_offset = Vector2( 25, 25 )
+0/navigation_offset = Vector2( 25, 25 )
+0/shape_offset = Vector2( 25, 25 )
+0/shapes = [ SubResource( 1 ) ]
+1/name = "Grass"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 50, 50 )
+1/occluder_offset = Vector2( 25, 25 )
+1/navigation_offset = Vector2( 25, 25 )
+1/shape_offset = Vector2( 25, 25 )
+1/shapes = [ SubResource( 2 ) ]
+2/name = "Crate"
+2/texture = ExtResource( 3 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 50, 50 )
+2/occluder_offset = Vector2( 25, 25 )
+2/navigation_offset = Vector2( 25, 25 )
+2/shape_offset = Vector2( 25, 25 )
+2/shapes = [ SubResource( 3 ) ]
+
