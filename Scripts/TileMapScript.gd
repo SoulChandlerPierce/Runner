@@ -7,12 +7,16 @@ extends TileMap
 func _ready():
 	# Called every time the node is added to the scene.
 	# Initialization here
-	set_cell(23,0,2)
-	_clear()
 	pass
 	
+var random = 0
 func _random_map():
 	_clear()
+	if random==0:
+		set_cell(22,2,2)
+		set_cell(35,2,2)
+		set_cell(48,2,2)
+		
 
 func _clear():
 	for i in range(40):
