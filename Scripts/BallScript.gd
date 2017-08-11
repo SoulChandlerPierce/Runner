@@ -4,7 +4,7 @@ extends KinematicBody2D
 # var a = 2
 # var b = "textvar"
 const GRAVITY = 400.0
-const ACCELERATION = 1
+const ACCELERATION = 5
 
 var velocity = Vector2()
 var position = Vector2()
@@ -26,7 +26,7 @@ func _fixed_process(delta):
 	if((Input.is_action_pressed("ui_up") || get_node("TouchScreenButton").is_pressed()) && jumps==1 && !jumping):
 			jumping = true
 			jumps += 1
-			velocity.y += -100
+			velocity.y += -200
 	
 	var motion = velocity * delta
 	motion = move(motion)
@@ -46,6 +46,6 @@ func _fixed_process(delta):
 func _ready():
 	# Called every time the node is added to the scene.
 	# Initialization here
-	velocity.x = 300
+	velocity.x = 350
 	set_fixed_process(true)
 	pass

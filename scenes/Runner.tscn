@@ -86,7 +86,7 @@ transform/pos = Vector2( 1.99676e-06, -1.19209e-06 )
 transform/scale = Vector2( 1.28, 1.28 )
 frames = SubResource( 2 )
 animation = "Foward"
-frame = 2
+frame = 4
 playing = true
 __meta__ = {
 "_edit_lock_": true
