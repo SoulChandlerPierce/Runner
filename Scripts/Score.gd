@@ -14,7 +14,7 @@ func _ready():
 var score = 0
 
 func _fixed_process(delta):
-	score += 10
+	score += 1
 	set_text("Score: " + str(score))
 	
 func _end():

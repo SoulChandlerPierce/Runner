@@ -17,6 +17,7 @@ func _fixed_process(delta):
 	if(velocity.x<150):
 		get_node("CanvasLayer/score")._end()
 	if(get_pos().x>170):
+		get_tree().get_root().get_node("Runner/TileMap")._random_map()
 		position = get_pos()
 		position.x = -60
 		set_pos(position)
